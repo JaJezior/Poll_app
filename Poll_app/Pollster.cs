@@ -31,13 +31,14 @@ namespace Pollster
             {
                 Console.WriteLine("Aby wczytać pytania podaj ścieżkę pliku *.json: (np. questions.json) lub 'q' aby zakończyć wczytywanie pytań.");
 
-                input = Console.ReadLine();
+                var input = Console.ReadLine();
                 if (input == "q") { break; }
                 else
                 {
                     try
                     {
                         dataService.Deserialize(input);
+                        Console.WriteLine($"Pytania z pliku {input} zostały wczytane.");
                     }
                     catch (ArgumentException ArgException)
                     {
