@@ -21,9 +21,11 @@ namespace Poll_app.Business.Logic
         {
 
             //Wczytywanie z pliku
+            //List<Question> loadedQuestions = new List<Question>();
             var jsonData = File.ReadAllText(filePath);
             var loadedQuestions = JsonConvert.DeserializeObject<List<Question>>(jsonData);
             return loadedQuestions;
+            }
         }
     }
 }
