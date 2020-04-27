@@ -21,7 +21,7 @@ namespace Pollster
 
 
         }
-        
+
 
         private readonly DataService dataService = new DataService();
 
