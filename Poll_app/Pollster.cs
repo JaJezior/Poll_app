@@ -18,8 +18,10 @@ namespace Pollster
             Console.WriteLine("Uruchomiono program Pollster CodeMentos");
 
             LoadQuestions();
+
+
         }
-        string input;
+        
 
         private readonly DataService dataService = new DataService();
 
