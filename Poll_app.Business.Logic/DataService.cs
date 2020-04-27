@@ -10,11 +10,12 @@ namespace Poll_app.Business.Logic
 {
     public class DataService
     {
-        public object JsonConvert { get; private set; }
-
-        public void Serialize()
+        public void Serialize(List<Question> loadedQuestions, string filePath)
         {
             //Zapis do pliku
+            var jsonData = JsonConvert.SerializeObject(loadedQuestions, Formatting.Indented);
+            File.WriteAllText(filePath, jsonData);
+
         }
         public List<Question> Deserialize(string filePath)
         {
