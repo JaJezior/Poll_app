@@ -1,0 +1,5 @@
+H:\Homework_2\Poll_app\Poll_app.Business.Logic\bin\Debug\netstandard2.0\Poll_app.Business.Logic.deps.json
+H:\Homework_2\Poll_app\Poll_app.Business.Logic\bin\Debug\netstandard2.0\Poll_app.Business.Logic.dll
+H:\Homework_2\Poll_app\Poll_app.Business.Logic\obj\Debug\netstandard2.0\Poll_app.Business.Logic.csprojAssemblyReference.cache
+H:\Homework_2\Poll_app\Poll_app.Business.Logic\obj\Debug\netstandard2.0\Poll_app.Business.Logic.AssemblyInfoInputs.cache
+H:\Homework_2\Poll_app\Poll_app.Business.Logic\obj\Debug\netstandard2.0\Poll_app.Business.Logic.AssemblyInfo.cs

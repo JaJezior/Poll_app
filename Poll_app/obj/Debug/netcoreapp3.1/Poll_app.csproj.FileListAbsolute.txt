@@ -1,0 +1,4 @@
+H:\Homework_2\Poll_app\Poll_app\bin\Debug\netcoreapp3.1\Poll_app.Business.Logic.dll
+H:\Homework_2\Poll_app\Poll_app\obj\Debug\netcoreapp3.1\Poll_app.csprojAssemblyReference.cache
+H:\Homework_2\Poll_app\Poll_app\obj\Debug\netcoreapp3.1\Poll_app.AssemblyInfoInputs.cache
+H:\Homework_2\Poll_app\Poll_app\obj\Debug\netcoreapp3.1\Poll_app.AssemblyInfo.cs
