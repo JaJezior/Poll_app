@@ -1,0 +1,34 @@
+[
+  {
+    "possibleAnswers": [
+      {
+        "AnswerIndex": 1,
+        "AnswerText": "Odpowiedź 1",
+        "AnswerCount": 0
+      },
+      {
+        "AnswerIndex": 2,
+        "AnswerText": "Odpowiedź 2",
+        "AnswerCount": 1
+      }
+    ],
+    "QuestionText": "Tekst pytania",
+    "QuestionCount": 1
+  },
+  {
+    "possibleAnswers": [
+      {
+        "AnswerIndex": 1,
+        "AnswerText": "Odpowiedź 1",
+        "AnswerCount": 1
+      },
+      {
+        "AnswerIndex": 2,
+        "AnswerText": "Odpowiedź 2",
+        "AnswerCount": 0
+      }
+    ],
+    "QuestionText": "Tekst pytania2",
+    "QuestionCount": 1
+  }
+]

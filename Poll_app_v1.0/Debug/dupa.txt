@@ -1,0 +1,17 @@
+Raport
+Tekst pytania
+To pytanie zadano następującą liczbę razy: 1
+1. Odpowiedź 1
+Tę odpowiedź wybrano 0 raz(-y) na 1 możliwych
+[----------------------------------------------------------------------------------------------------]
+2. Odpowiedź 2
+Tę odpowiedź wybrano 1 raz(-y) na 1 możliwych
+[ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo]
+Tekst pytania2
+To pytanie zadano następującą liczbę razy: 1
+1. Odpowiedź 1
+Tę odpowiedź wybrano 1 raz(-y) na 1 możliwych
+[ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo]
+2. Odpowiedź 2
+Tę odpowiedź wybrano 0 raz(-y) na 1 możliwych
+[----------------------------------------------------------------------------------------------------]
