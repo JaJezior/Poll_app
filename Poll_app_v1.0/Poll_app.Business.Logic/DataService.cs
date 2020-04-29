@@ -188,7 +188,7 @@ namespace Poll_app.Business.Logic
                     thisAnswerPercentage = Math.Round(thisAnswerPercentage, 0);
                     for (int x = 1; x <=100; x++)
                     {
-                        if(thisAnswerPercentage> x)
+                        if(thisAnswerPercentage>= x)
                         {
                             percentageBar.Append("o");
                         }
