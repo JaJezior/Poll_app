@@ -23,7 +23,7 @@
       },
       {
         "AnswerIndex": 5,
-        "AnswerText": "A komu to potrzebne?",
+        "AnswerText": "Piernik najbardziej cieszy, jakby wiatrak upadł i sobie głupi ryj rozwalił.",
         "AnswerCount": 0
       }
     ],
@@ -50,7 +50,7 @@
     ],
     "QuestionText": "Gdzie ci mężczyźni?",
     "QuestionCount": 0
-  }
+  },
   {
     "possibleAnswers": [
       {
@@ -71,7 +71,7 @@
     ],
     "QuestionText": "Jolka, Jolka, pamiętasz lato ze snu?",
     "QuestionCount": 0
-  }
+  },
   {
     "possibleAnswers": [
       {

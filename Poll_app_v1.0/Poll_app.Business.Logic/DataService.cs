@@ -149,6 +149,7 @@ namespace Poll_app.Business.Logic
                     Serialize(loadedQuestions, input);
                     Console.WriteLine($"Plik {input} został zapisany.");
                     isSavingDone = true;
+                    Console.ReadKey();
                 }
                 catch (ArgumentException ArgException)
                 {
