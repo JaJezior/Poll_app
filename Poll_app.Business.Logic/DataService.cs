@@ -185,48 +185,63 @@ namespace Poll_app.Business.Logic
 
                     double thisAnswerPercentage =  100 * loadedQuestions[i].possibleAnswers[j].AnswerCount / loadedQuestions[i].QuestionCount;
                     thisAnswerPercentage = Math.Round(thisAnswerPercentage, 0);
-
+                    for (int x = 1; x <=100; x++)
+                    {
+                        if(thisAnswerPercentage> x)
+                        {
+                            // o
+                            percentageBar.Append("o");
+                        }
+                        if(thisAnswerPercentage< x)
+                        {
+                            // -
+                            percentageBar.Append("-");
+                        }
+                        
+                    }
+                    percentageBar.Append("]");
+                    Console.WriteLine(percentageBar);
                 }
 
 
-                bool isAnswerDone = false;
+                //bool isAnswerDone = false;
 
-                while (isAnswerDone == false)
-                {
-                    try
-                    {
-                        Console.WriteLine("Wybierz numer odpowiedzi:");
-                        int usersAnswer = int.Parse(Console.ReadLine());
+                //while (isAnswerDone == false)
+                //{
+                //    try
+                //    {
+                //        Console.WriteLine("Wybierz numer odpowiedzi:");
+                //        int usersAnswer = int.Parse(Console.ReadLine());
 
-                        if (loadedQuestions[i].possibleAnswers.Exists(x => x.AnswerIndex == usersAnswer))
-                        {
+                //        if (loadedQuestions[i].possibleAnswers.Exists(x => x.AnswerIndex == usersAnswer))
+                //        {
 
-                            foreach (Answer ans in loadedQuestions[i].possibleAnswers)
-                            {
-                                if (usersAnswer == ans.AnswerIndex)
-                                {
-                                    ans.AnswerCount++;
-                                    Console.WriteLine($"Zapisano. Twoja odpowiedź to: {usersAnswer}.");
-                                    isAnswerDone = true;
-                                }
-                            }
-                            loadedQuestions[i].QuestionCount++;
-                        }
-                        if (!loadedQuestions[i].possibleAnswers.Exists(x => x.AnswerIndex == usersAnswer))
-                        {
-                            Console.WriteLine($"Odpowiedź '{usersAnswer}' nie istnieje.");
-                        }
+                //            foreach (Answer ans in loadedQuestions[i].possibleAnswers)
+                //            {
+                //                if (usersAnswer == ans.AnswerIndex)
+                //                {
+                //                    ans.AnswerCount++;
+                //                    Console.WriteLine($"Zapisano. Twoja odpowiedź to: {usersAnswer}.");
+                //                    isAnswerDone = true;
+                //                }
+                //            }
+                //            loadedQuestions[i].QuestionCount++;
+                //        }
+                //        if (!loadedQuestions[i].possibleAnswers.Exists(x => x.AnswerIndex == usersAnswer))
+                //        {
+                //            Console.WriteLine($"Odpowiedź '{usersAnswer}' nie istnieje.");
+                //        }
 
-                    }
-                    catch (ArgumentException argexception)
-                    {
-                        Console.WriteLine(argexception.Message);
-                    }
-                    catch (FormatException formatexception)
-                    {
-                        Console.WriteLine(formatexception.Message);
-                    }
-                }
+                //    }
+                //    catch (ArgumentException argexception)
+                //    {
+                //        Console.WriteLine(argexception.Message);
+                //    }
+                //    catch (FormatException formatexception)
+                //    {
+                //        Console.WriteLine(formatexception.Message);
+                //    }
+                //}
 
 
 
