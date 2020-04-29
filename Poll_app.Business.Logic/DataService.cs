@@ -13,6 +13,7 @@ namespace Poll_app.Business.Logic
         public void Serialize(List<Question> loadedQuestions, string filePath)
         {
             //Zapis do pliku
+            filePath = filePath + ".json";
             var jsonData = JsonConvert.SerializeObject(loadedQuestions, Formatting.Indented);
             File.WriteAllText(filePath, jsonData);
             Console.WriteLine($"Zapisano plik {filePath}");
@@ -133,6 +134,32 @@ namespace Poll_app.Business.Logic
             if (loadedQuestions is null)
             {
                 throw new ArgumentNullException(nameof(loadedQuestions));
+            }
+
+            bool isSavingDone = false;
+
+            while (isSavingDone == false)
+            {
+
+                Console.WriteLine("Aby zapisać odpowiedzi podaj docelową ścieżkę pliku *.json: (np. 'answers').");
+                string input = Console.ReadLine();
+
+                try
+                {
+                    Serialize(loadedQuestions, input);
+                    Console.WriteLine($"Plik {input} został zapisany.");
+                    isSavingDone = true;
+                }
+                catch (ArgumentException ArgException)
+                {
+                    Console.WriteLine(ArgException.Message);
+
+                }
+                catch (FormatException FormatException)
+                {
+                    Console.WriteLine(FormatException.Message);
+                }
+
             }
 
         }

@@ -17,14 +17,13 @@ namespace Pollster
 
         private void Run()
         {
-
-
-
-
+            
             Console.WriteLine("Uruchomiono program Pollster CodeMentos");
 
             //LoadQuestions();
-            dataService.AskQuestions(dataService.LoadQuestions());
+            List<Question> loadedQuestions = dataService.LoadQuestions();
+            dataService.AskQuestions(loadedQuestions);
+            dataService.SaveAnswers(loadedQuestions);
 
 
 
