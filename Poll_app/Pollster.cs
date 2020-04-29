@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Dynamic;
-using Newtonsoft.Json;
 using Poll_app.Business.Logic;
 
 namespace Pollster
@@ -20,9 +18,9 @@ namespace Pollster
         {
 
 
-            
 
-        Console.WriteLine("Uruchomiono program Pollster CodeMentos");
+
+            Console.WriteLine("Uruchomiono program Pollster CodeMentos");
 
             LoadQuestions();
             AskQuestions();
@@ -30,6 +28,11 @@ namespace Pollster
 
 
         }
+
+
+
+        public DataService dataService = new DataService();
+
 
         private static void InitData()
         {
@@ -79,42 +82,42 @@ namespace Pollster
             var _dataService = new DataService();
             _dataService.Serialize(_list, "questions.json");
         }
-        private void LoadQuestions()
+        private List<Question> LoadQuestions()
         {
 
 
-            while (true)
-            {
-                Console.WriteLine("Aby wczytać pytania podaj ścieżkę pliku *.json: (np. questions.json) lub 'q' aby zakończyć wczytywanie pytań.");
 
-                var input = Console.ReadLine();
-                if (input == "q") { break; }
-                else
-                {
-                    try
-                    {
-                        dataService.Deserialize(input);
-                        Console.WriteLine($"Pytania z pliku {input} zostały wczytane.");
-                    }
-                    catch (ArgumentException ArgException)
-                    {
-                        Console.WriteLine(ArgException.Message);
-                    }
-                    catch (FormatException FormatException)
-                    {
-                        Console.WriteLine(FormatException.Message);
-                    }
-                    catch (System.IO.FileNotFoundException FileNFException)
-                    {
-                        Console.WriteLine(FileNFException.Message);
-                    }
-                    //finally
-                    //{
-                    //    Console.WriteLine("Wczytywanie nie powiodło się.");
-                    //}
-                }
+            Console.WriteLine("Aby wczytać pytania podaj ścieżkę pliku *.json: (np. questions.json) lub 'q' aby zakończyć wczytywanie pytań.");
+
+            var input = Console.ReadLine();
+
+
+
+            try
+            {
+                dataService.Deserialize(input);
+                Console.WriteLine($"Pytania z pliku {input} zostały wczytane.");
+
+
 
             }
+            catch (ArgumentException ArgException)
+            {
+                Console.WriteLine(ArgException.Message);
+
+            }
+            catch (FormatException FormatException)
+            {
+                Console.WriteLine(FormatException.Message);
+            }
+            catch (System.IO.FileNotFoundException FileNFException)
+            {
+                Console.WriteLine(FileNFException.Message);
+            }
+            return dataService.Deserialize(input);
+
+
+
 
 
         }
