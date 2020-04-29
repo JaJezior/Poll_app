@@ -69,6 +69,7 @@ namespace Poll_app.Business.Logic
                                 isAnswerDone = true;
                             }
                         }
+                            loadedQuestions[i].QuestionCount++;
                         }
                         if (!loadedQuestions[i].possibleAnswers.Exists(x => x.AnswerIndex == usersAnswer))
                         {
