@@ -16,7 +16,8 @@ namespace Reporter
         {
             Console.WriteLine("Uruchomiono program Reporter CodeMentos");
 
-            List<Question> loadedQuestion = dataService.LoadQuestions();
+            List<Question> loadedQuestions = dataService.LoadQuestions();
+            dataService.GenerateRaport(loadedQuestions);
 
         }
     }
