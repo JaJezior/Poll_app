@@ -2,8 +2,8 @@
 {
     public class Answer
     {
-        public int AnswerIndex { get; }
-        public string AnswerText { get; }
+        public int AnswerIndex { get; set; }
+        public string AnswerText { get; set; }
         public int AnswerCount { get; set; }
     }
 }

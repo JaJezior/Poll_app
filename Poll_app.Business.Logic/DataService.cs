@@ -7,7 +7,7 @@ using Poll_app;
 
 
 namespace Poll_app.Business.Logic
-{
+{ 
     public class DataService
     {
         public void Serialize(List<Question> loadedQuestions, string filePath)
@@ -15,6 +15,7 @@ namespace Poll_app.Business.Logic
             //Zapis do pliku
             var jsonData = JsonConvert.SerializeObject(loadedQuestions, Formatting.Indented);
             File.WriteAllText(filePath, jsonData);
+            Console.WriteLine($"Zapisano plik {filePath}");
 
         }
         public List<Question> Deserialize(string filePath)
@@ -28,4 +29,4 @@ namespace Poll_app.Business.Logic
             }
         }
     }
-}
+

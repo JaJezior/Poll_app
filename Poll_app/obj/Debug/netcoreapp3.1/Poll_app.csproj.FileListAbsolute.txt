@@ -2,3 +2,16 @@ H:\Homework_2\Poll_app\Poll_app\bin\Debug\netcoreapp3.1\Poll_app.Business.Logic.
 H:\Homework_2\Poll_app\Poll_app\obj\Debug\netcoreapp3.1\Poll_app.csprojAssemblyReference.cache
 H:\Homework_2\Poll_app\Poll_app\obj\Debug\netcoreapp3.1\Poll_app.AssemblyInfoInputs.cache
 H:\Homework_2\Poll_app\Poll_app\obj\Debug\netcoreapp3.1\Poll_app.AssemblyInfo.cs
+H:\Homework_2\Poll_app\Poll_app\obj\Debug\netcoreapp3.1\Poll_app.csproj.CoreCompileInputs.cache
+H:\Homework_2\Poll_app\Poll_app\bin\Debug\netcoreapp3.1\Poll_app.exe
+H:\Homework_2\Poll_app\Poll_app\bin\Debug\netcoreapp3.1\Poll_app.deps.json
+H:\Homework_2\Poll_app\Poll_app\bin\Debug\netcoreapp3.1\Poll_app.runtimeconfig.json
+H:\Homework_2\Poll_app\Poll_app\bin\Debug\netcoreapp3.1\Poll_app.runtimeconfig.dev.json
+H:\Homework_2\Poll_app\Poll_app\bin\Debug\netcoreapp3.1\Poll_app.dll
+H:\Homework_2\Poll_app\Poll_app\bin\Debug\netcoreapp3.1\Poll_app.pdb
+H:\Homework_2\Poll_app\Poll_app\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+H:\Homework_2\Poll_app\Poll_app\bin\Debug\netcoreapp3.1\Poll_app.Business.Logic.pdb
+H:\Homework_2\Poll_app\Poll_app\obj\Debug\netcoreapp3.1\Poll_app.csproj.CopyComplete
+H:\Homework_2\Poll_app\Poll_app\obj\Debug\netcoreapp3.1\Poll_app.dll
+H:\Homework_2\Poll_app\Poll_app\obj\Debug\netcoreapp3.1\Poll_app.pdb
+H:\Homework_2\Poll_app\Poll_app\obj\Debug\netcoreapp3.1\Poll_app.genruntimeconfig.cache
