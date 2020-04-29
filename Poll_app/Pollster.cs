@@ -22,8 +22,8 @@ namespace Pollster
 
             Console.WriteLine("Uruchomiono program Pollster CodeMentos");
 
-            LoadQuestions();
-            AskQuestions();
+            //LoadQuestions();
+            AskQuestions(LoadQuestions());
 
 
 
@@ -87,7 +87,7 @@ namespace Pollster
 
 
 
-            Console.WriteLine("Aby wczytać pytania podaj ścieżkę pliku *.json: (np. questions.json) lub 'q' aby zakończyć wczytywanie pytań.");
+            Console.WriteLine("Aby wczytać pytania podaj ścieżkę pliku *.json: (np. questions.json).");
 
             var input = Console.ReadLine();
 
@@ -97,8 +97,6 @@ namespace Pollster
             {
                 dataService.Deserialize(input);
                 Console.WriteLine($"Pytania z pliku {input} zostały wczytane.");
-
-
 
             }
             catch (ArgumentException ArgException)
@@ -122,9 +120,38 @@ namespace Pollster
 
         }
 
-        private void AskQuestions()
+        private void AskQuestions(List<Question> loadedQuestions)
         {
-            throw new NotImplementedException();
+            for (int i = 0; i < loadedQuestions.Count; i++)
+            {
+                Question q = loadedQuestions[i];
+                Console.WriteLine($"{loadedQuestions[i].QuestionText}");
+
+                for (int j = 0; j < loadedQuestions[i].possibleAnswers.Count; j++)
+                {
+                    Console.WriteLine($"{loadedQuestions[i].possibleAnswers[j].AnswerIndex}. {loadedQuestions[i].possibleAnswers[j].AnswerText}");
+                }
+
+                Console.WriteLine("Wybierz numer odpowiedzi:");
+
+                try
+                {
+                    int usersAnswer = int.Parse(Console.ReadLine());
+                    Console.WriteLine($"Zapisano. Twoja odpowiedź to: {usersAnswer}.");
+
+                }
+                catch (ArgumentException argexception)
+                {
+                    System.Console.WriteLine(argexception.Message);
+                }
+                catch (FormatException formatexception)
+                {
+                    System.Console.WriteLine(formatexception.Message);
+                }
+                
+            }
+            
+            
         }
     }
 }
