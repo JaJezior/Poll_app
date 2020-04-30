@@ -191,11 +191,11 @@ namespace Poll_app.Business.Logic
                     {
                         if(thisAnswerPercentage>= x)
                         {
-                            percentageBar.Append("o");
+                            percentageBar.Append("█");
                         }
                         if(thisAnswerPercentage< x)
                         {
-                           percentageBar.Append("-");
+                           percentageBar.Append("·");
                         }
                         
                     }
