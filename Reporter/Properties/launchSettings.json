@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Reporter": {
+      "commandName": "Project",
+      "workingDirectory": "H:\\Homework_2\\Poll_app_v1.1\\WorkingDir"
+    }
+  }
+}
