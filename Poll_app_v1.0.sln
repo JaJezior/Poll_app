@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reporter", "Reporter\Reporter.csproj", "{530C89E2-4B5A-4367-9C39-04B6221EF043}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Polster_app", "Pollster\Polster_app.csproj", "{6BD59791-77AD-495E-8A1C-9A5AE24E610D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Polster_app", "Pollster_app\Polster_app.csproj", "{6BD59791-77AD-495E-8A1C-9A5AE24E610D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Poll_app.Business.Logic", "Poll_app.Business.Logic\Poll_app.Business.Logic.csproj", "{AC151EE3-EE20-4132-B309-0E1931CFCB6A}"
 EndProject
