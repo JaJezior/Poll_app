@@ -5,13 +5,13 @@ using Poll_app.Business.Logic;
 
 namespace Reporter
 {
-    class Reporter
+    class Reporter_app
     {
         public PollService pollService = new PollService();
         public ReportService reportService = new ReportService();
         static void Main()
         {
-            new Reporter().Run();
+            new Reporter_app().Run();
         }
 
         private void Run()
